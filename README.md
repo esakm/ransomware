@@ -1,4 +1,4 @@
-## This is an attempt to write undetectable ransomware by using no crypto libraries.
+## Undetectable ransomware by using no crypto libraries!
 
 
 ### The following algorithms are implemented:
