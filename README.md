@@ -1,7 +1,7 @@
-#This is an attempt to write undetectable ransomware by using no crypto libraries. All agorithms are custom implementations.
+# This is an attempt to write undetectable ransomware by using no crypto libraries. All agorithms are custom implementations.
 
 
-#The following algorithms are implemented:
+### The following algorithms are implemented:
 ```
 ECC
 RSA with no padding(for now)
