@@ -1,4 +1,4 @@
-# This is an attempt to write undetectable ransomware by using no crypto libraries. All agorithms are custom implementations.
+# This is an attempt to write undetectable ransomware by using no crypto libraries.
 
 
 ### The following algorithms are implemented:
@@ -10,10 +10,10 @@ XOR
 RC4
 ```
 
-# Features I'm planning to add:
+### Features I'm planning to add:
 ```
 Server communication
-OAEP padding
+RSA-OAEP
 Automatic encryption of the whole filesystem
 Buffering of files
 Parallelization/concurrency where possible
