@@ -1,0 +1,7 @@
+.idea
+*.iml
+out
+gen
+build
+test_script.py
+dist/main/test
