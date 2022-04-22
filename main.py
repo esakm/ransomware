@@ -1,4 +1,3 @@
-from factory import AlgoFactory
 import os
 import argparse
 import random
@@ -46,36 +45,37 @@ if __name__ == '__main__':
     args = parser.parse_args()
 
     if args.action == 'encrypt':
-        if args.type == 'sym':
-            if args.algo is None:
-                args.algo = 'xor'
-            if args.algo not in sym_types:
-                raise ValueError("Chosen Algorithm is not Symmetric!")
-            algo_get = AlgoFactory.get_algo(args.algo, args.secret)
-            encrypt_folder(args.folder, algo_get)
-        else:
-            if args.algo is None:
-                args.algo = 'rsa'
-            if args.algo not in asym_types:
-                raise ValueError("Chosen Algorithm is not Asymmetric!")
-            algo_get = AlgoFactory.get_algo(args.algo, args.secret)
-            encrypt_folder(args.folder, algo_get)
-
-    elif args.action == 'decrypt':
-        if args.type == 'sym':
-            if args.algo is None:
-                args.algo = 'xor'
-            if args.algo not in sym_types:
-                raise ValueError("Chosen Algorithm is not Symmetric!")
-            algo_get = AlgoFactory.get_algo(args.algo, args.secret)
-            decrypt_folder(args.folder, algo_get)
-        else:
-            if args.algo is None:
-                args.algo = 'rsa'
-            if args.algo not in asym_types:
-                raise ValueError("Chosen Algorithm is not Asymmetric!")
-            algo_get = AlgoFactory.get_algo(args.algo, args.secret)
-            decrypt_folder(args.folder, algo_get)
+        pass
+    #     if args.type == 'sym':
+    #         if args.algo is None:
+    #             args.algo = 'xor'
+    #         if args.algo not in sym_types:
+    #             raise ValueError("Chosen Algorithm is not Symmetric!")
+    #         algo_get = AlgoFactory.get_algo(args.algo, args.secret)
+    #         encrypt_folder(args.folder, algo_get)
+    #     else:
+    #         if args.algo is None:
+    #             args.algo = 'rsa'
+    #         if args.algo not in asym_types:
+    #             raise ValueError("Chosen Algorithm is not Asymmetric!")
+    #         algo_get = AlgoFactory.get_algo(args.algo, args.secret)
+    #         encrypt_folder(args.folder, algo_get)
+    #
+    # elif args.action == 'decrypt':
+    #     if args.type == 'sym':
+    #         if args.algo is None:
+    #             args.algo = 'xor'
+    #         if args.algo not in sym_types:
+    #             raise ValueError("Chosen Algorithm is not Symmetric!")
+    #         algo_get = AlgoFactory.get_algo(args.algo, args.secret)
+    #         decrypt_folder(args.folder, algo_get)
+    #     else:
+    #         if args.algo is None:
+    #             args.algo = 'rsa'
+    #         if args.algo not in asym_types:
+    #             raise ValueError("Chosen Algorithm is not Asymmetric!")
+    #         algo_get = AlgoFactory.get_algo(args.algo, args.secret)
+    #         decrypt_folder(args.folder, algo_get)
 
     else:
         print("choose a valid option!")
